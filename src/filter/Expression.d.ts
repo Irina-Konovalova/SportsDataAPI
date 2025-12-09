@@ -3,7 +3,7 @@ export module Expressions
     var Item : ObjectExpression;
     var Now : DateTimeExpression;
     var Today : DateTimeExpression;
-
+     // changes
     export interface IExecutableExpression
     {
         serialize() : JSON;
@@ -39,12 +39,12 @@ export module Expressions
     export interface DateTimeExpression extends Expression
     {
         parse(exp: string|Expression) : DateTimeExpression;
-        addSeconds(exp: number|Expression): DateTimeExpression;            
-        addMinutes(exp: number|Expression): DateTimeExpression;            
-        addHours(exp: number|Expression): DateTimeExpression;            
-        addDays(exp: number|Expression): DateTimeExpression;            
-        addMonth(exp: number|Expression): DateTimeExpression;            
-        addYears(exp: number|Expression): DateTimeExpression;            
+        addSeconds(exp: number|Expression): DateTimeExpression;
+        addMinutes(exp: number|Expression): DateTimeExpression;
+        addHours(exp: number|Expression): DateTimeExpression;
+        addDays(exp: number|Expression): DateTimeExpression;
+        addMonth(exp: number|Expression): DateTimeExpression;
+        addYears(exp: number|Expression): DateTimeExpression;
     }
 
     export interface BooleanExpression extends IExecutableExpression
